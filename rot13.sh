@@ -1,7 +1,5 @@
-echo "enter the string" 
-read x
-for i in $x;
-do
+read -p "Enter String to Encode: " x
+for i in $x;do
 	echo " this is encoded message"
-	echo $x |tr 'a-z' 'n-za-m'
+	echo $x |tr 'a-zA-Z' 'n-za-mN-ZA-M'
 done
